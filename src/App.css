@@ -1,0 +1,106 @@
+.App-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 700px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.App-title {
+  margin-bottom: 50px;
+}
+
+.App-notes-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 700px;
+}
+
+.Form {
+  position: relative;
+
+  display: inline-flex;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}
+
+.Form-control {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.Form-control__text,
+.Form-control__button-add {
+  padding: 10px;
+}
+
+.Form-control__text {
+  width: 300px;
+  padding: 10px;
+
+  font: inherit;
+
+  color: inherit;
+  box-shadow: none;
+  border: 1px solid black;
+  border-radius: 5px;
+
+  resize: none;
+
+  overflow-wrap: break-word;
+}
+
+.Form-control__button-add {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+
+  font-size: 18px;
+  line-height: 1;
+
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+.Note {
+  position: relative;
+
+  display: inline-flex;
+  width: 300px;
+  padding: 20px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+
+  background-color: #ffffff;
+  border: 1px solid black;
+
+  overflow-wrap: anywhere;
+}
+
+.Note__control-delete {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  height: 40px;
+
+  font-size: 30px;
+
+  color: red;
+  background-color: #ffffff;
+  border: 1px solid black;
+  border-radius: 50%;
+  text-decoration: none;
+  user-select: none;
+}
